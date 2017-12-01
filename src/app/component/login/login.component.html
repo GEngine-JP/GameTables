@@ -1,3 +1,19 @@
-<p>
-  login works!
-</p>
+<table>
+  <tr>
+    <td>账号</td>
+    <td><input type="text" [(ngModel)]="userName" title=""/></td>
+  </tr>
+  <tr>
+    <td>密码</td>
+    <td><input type="password" [(ngModel)]="password" title=""/></td>
+  </tr>
+  <tr>
+    <td>
+      <button class="commit" *ngIf="loginBtn" (click)="login()">连接</button>
+    </td>
+    <td>
+      <button class="reset" (click)="reset()">清空</button>
+    </td>
+  </tr>
+
+</table>
