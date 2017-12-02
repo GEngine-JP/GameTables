@@ -10,13 +10,17 @@ import {RegisterService} from './component/register/register.service';
 import {AppRoutingModule} from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
+import {LoginPipe} from './component/login/login.pipe';
+import {LoginDirective} from './component/login/login.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginPipe,
+    LoginDirective
   ],
   imports: [
     BrowserModule,
