@@ -12,6 +12,8 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {LoginPipe} from './component/login/login.pipe';
 import {LoginDirective} from './component/login/login.directive';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgZorroAntdModule} from 'ng-zorro-antd';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import {LoginDirective} from './component/login/login.directive';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule,
+    NgZorroAntdModule.forRoot()
   ],
   providers: [
     LoginService,
