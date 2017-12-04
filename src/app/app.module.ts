@@ -9,11 +9,12 @@ import {LoginService} from './component/login/login.service';
 import {RegisterService} from './component/register/register.service';
 import {AppRoutingModule} from './app-routing.module';
 import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
 import {LoginPipe} from './component/login/login.pipe';
 import {LoginDirective} from './component/login/login.directive';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {HttpClientModule} from '@angular/common/http';
+import {CommonModule} from '@angular/common';
 
 
 @NgModule({
@@ -28,8 +29,9 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     BrowserAnimationsModule,
+    CommonModule,
     NgZorroAntdModule.forRoot()
   ],
   providers: [
