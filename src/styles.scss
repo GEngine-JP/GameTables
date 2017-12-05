@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+$fontcolor:#b8952b;
+$background-color:#fcf8f0;
+$fontcolor1:#ceab42;
+$titleopac:0.7;
+$lightColor:#eee;
+$active:#f0e5c6;
+$hover:#f5eeda;
 html, body {
   margin: 0;
   padding: 0;
@@ -54,6 +61,7 @@ html, body {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
+    border-top-color: $fontcolor;
     transform: translate3d(0, 0, 0);
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
     &:before {
@@ -65,6 +73,7 @@ html, body {
       bottom: 5px;
       border-radius: 50%;
       border: 3px solid transparent;
+      border-top-color: $fontcolor;
       -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
       animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
     }
@@ -77,6 +86,7 @@ html, body {
       bottom: 15px;
       border-radius: 50%;
       border: 3px solid transparent;
+      border-top-color: $fontcolor;
       animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
     }
   }
