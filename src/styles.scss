@@ -16,6 +16,8 @@ html, body {
 
 }
 
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
