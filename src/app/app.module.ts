@@ -13,8 +13,8 @@ import {LoginPipe} from './component/login/login.pipe';
 import {LoginDirective} from './component/login/login.directive';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
-import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
+import {HttpModule} from '@angular/http';
 
 
 @NgModule({
@@ -29,7 +29,7 @@ import {CommonModule} from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
+    HttpModule,
     BrowserAnimationsModule,
     CommonModule,
     NgZorroAntdModule.forRoot()
