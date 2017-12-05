@@ -1,16 +1,16 @@
 import {Injectable} from '@angular/core';
 import {login} from '../../../config';
-import {Http} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class LoginService {
   private loginUrl: string = login.login;
   private headers = new Headers({'Content-Type': 'application/json'});
 
-  constructor(private  http: Http) {
+  constructor(private  http: HttpClient) {
   }
 
   login(data: any): Observable<any> {

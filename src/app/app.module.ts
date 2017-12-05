@@ -14,7 +14,7 @@ import {LoginDirective} from './component/login/login.directive';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {CommonModule} from '@angular/common';
-import {HttpModule} from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -29,7 +29,7 @@ import {HttpModule} from '@angular/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     CommonModule,
     NgZorroAntdModule.forRoot()
