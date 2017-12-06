@@ -20,6 +20,7 @@ import { BlogComponent } from './component/blog/blog.component';
 import { GithubComponent } from './component/github/github.component';
 import { LinkComponent } from './component/link/link.component';
 import { AboutComponent } from './component/about/about.component';
+import { ToolComponent } from './component/tool/tool.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AboutComponent } from './component/about/about.component';
     BlogComponent,
     GithubComponent,
     LinkComponent,
-    AboutComponent
+    AboutComponent,
+    ToolComponent
   ],
   imports: [
     BrowserModule,
