@@ -15,12 +15,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
-import { HomeComponent } from './component/home/home.component';
-import { BlogComponent } from './component/blog/blog.component';
-import { GithubComponent } from './component/github/github.component';
-import { LinkComponent } from './component/link/link.component';
-import { AboutComponent } from './component/about/about.component';
-import { ToolComponent } from './component/tool/tool.component';
+import {HomeComponent} from './component/home/home.component';
+import {BlogComponent} from './component/blog/blog.component';
+import {GithubComponent} from './component/github/github.component';
+import {LinkComponent} from './component/link/link.component';
+import {AboutComponent} from './component/about/about.component';
+import {ToolComponent} from './component/tool/tool.component';
+import {HeaderComponent} from './component/home/header/header.component';
+import {FooterComponent} from './component/home/footer/footer.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { ToolComponent } from './component/tool/tool.component';
     GithubComponent,
     LinkComponent,
     AboutComponent,
-    ToolComponent
+    ToolComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

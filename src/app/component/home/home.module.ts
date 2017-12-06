@@ -5,8 +5,7 @@ import {ProjectComponent} from './project/project.component';
 import {ExperienceComponent} from './experience/experience.component';
 import {ConcatComponent} from './concat/concat.component';
 import {AbilityComponent} from './ability/ability.component';
-import {HeaderComponent} from './header/header.component';
-import {FooterComponent} from './footer/footer.component';
+import {UserCenterComponent} from './header/user-center/user-center.component';
 
 @NgModule({
   imports: [
@@ -18,8 +17,7 @@ import {FooterComponent} from './footer/footer.component';
     ExperienceComponent,
     ConcatComponent,
     AbilityComponent,
-    HeaderComponent,
-    FooterComponent
+    UserCenterComponent
   ]
 })
 export class HomeModule {

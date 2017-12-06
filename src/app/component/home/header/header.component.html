@@ -1,3 +1,36 @@
-<p>
-  header works!
-</p>
+<div class="navbar navbar-fixed-top main-nav" role="navigation">
+  <div class="container">
+    <!--<p-growl [(value)]="msgs"></p-growl>-->
+    <div class="navbar-header">
+      <button #button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse" (click)="toggle(button)">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a routerLink="posts" class="navbar-brand navbar-brand-my">
+        NiceFish
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-responsive-collapse" aria-expanded="false">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active" class="dropdown">
+          <a routerLink="posts">{{'app.index' | translate}}</a>
+        </li>
+        <li class="dropdown">
+          <a routerLink="echart">{{'app.project' | translate}}</a>
+        </li>
+        <li class="dropdown">
+          <a routerLink="map">{{'app.experience' | translate}}</a>
+        </li>
+        <li class="dropdown">
+          <a routerLink="jsplumb">{{'app.ability' | translate}}</a>
+        </li>
+        <li class="dropdown">
+          <a routerLink="jsplumb">{{'app.concat' | translate}}</a>
+        </li>
+      </ul>
+      <!--  user center 占位符 -->
+    </div>
+  </div>
+</div>

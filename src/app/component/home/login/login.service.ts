@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {login} from '../../../config';
+import {login} from '../../../../config';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
