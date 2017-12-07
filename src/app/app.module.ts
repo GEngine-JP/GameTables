@@ -9,8 +9,6 @@ import {LoginService} from './component/home/login/login.service';
 import {RegisterService} from './component/home/register/register.service';
 import {AppRoutingModule} from './app-routing.module';
 import {FormsModule} from '@angular/forms';
-import {LoginPipe} from './component/home/login/login.pipe';
-import {LoginDirective} from './component/home/login/login.directive';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {CommonModule} from '@angular/common';
@@ -30,8 +28,6 @@ import {FooterComponent} from './component/home/footer/footer.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    LoginPipe,
-    LoginDirective,
     HomeComponent,
     BlogComponent,
     GithubComponent,
