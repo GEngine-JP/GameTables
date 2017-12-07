@@ -1,9 +1,6 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {HomeComponent} from './component/home/home.component';
-import {ConcatComponent} from './component/home/concat/concat.component';
-import {AbilityComponent} from './component/home/ability/ability.component';
-import {ProjectComponent} from './component/home/project/project.component';
 import {LoginComponent} from './component/home/login/login.component';
 import {RegisterComponent} from './component/home/register/register.component';
 import {BlogComponent} from './component/blog/blog.component';
