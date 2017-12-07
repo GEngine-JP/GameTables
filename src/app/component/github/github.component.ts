@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Item} from './item';
+import {ItemService} from './item.service';
 
 @Component({
   selector: 'app-github',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubComponent implements OnInit {
 
-  constructor() { }
+  private items: Item[];
+
+  constructor(private itemService: ItemService) {
+  }
 
   ngOnInit() {
+    this.itemService.getGithubInfo().subscribe(list => {
+      this.items = list;
+      console.log(this.items);
+    });
   }
 
 }

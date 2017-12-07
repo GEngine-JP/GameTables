@@ -24,6 +24,7 @@ import {LinkComponent} from './component/link/link.component';
 import {ToolComponent} from './component/tool/tool.component';
 import {AboutComponent} from './component/about/about.component';
 import {BlogComponent} from './component/blog/blog.component';
+import {ItemService} from './component/github/item.service';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, './assets/i18n', '.json');
@@ -40,7 +41,7 @@ export function createTranslateLoader(http: Http) {
     AboutComponent,
     ToolComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,7 +65,8 @@ export function createTranslateLoader(http: Http) {
   ],
   providers: [
     LoginService,
-    RegisterService
+    RegisterService,
+    ItemService
   ],
   bootstrap: [AppComponent]
 })
