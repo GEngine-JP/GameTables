@@ -1,0 +1,14 @@
+{
+  "app": {
+    "index": "ホーム",
+    "project": "プロジェクト",
+    "experience": "経験",
+    "ability": "能力",
+    "concat": "連絡",
+    "blog": "ブログ",
+    "github": "github",
+    "about": "について",
+    "tool": "ツール"
+  }
+
+}

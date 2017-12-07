@@ -1,6 +1,13 @@
 {
   "app": {
-    "articles": "动态"
-
+    "index": "首页",
+    "project": "项目",
+    "experience": "经验",
+    "ability": "能力",
+    "concat": "联系方式",
+    "blog": "博客",
+    "github": "github",
+    "about": "关于",
+    "tool": "工具"
   }
 }

@@ -5,13 +5,15 @@ import {ProjectComponent} from './project/project.component';
 import {ExperienceComponent} from './experience/experience.component';
 import {ConcatComponent} from './concat/concat.component';
 import {AbilityComponent} from './ability/ability.component';
-import {UserCenterComponent} from './header/user-center/user-center.component';
+import {UserCenterComponent} from '../common/header/user-center/user-center.component';
+import {HomeComponent} from './home.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
   ],
   declarations: [
+    HomeComponent,
     XiaomoComponent,
     ProjectComponent,
     ExperienceComponent,
