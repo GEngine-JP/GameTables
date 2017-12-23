@@ -1,12 +1,8 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
-import {HomeComponent} from './component/home/home.component';
-import {LoginComponent} from './component/home/login/login.component';
-import {RegisterComponent} from './component/home/register/register.component';
-import {BlogComponent} from './component/blog/blog.component';
-import {GithubComponent} from './component/github/github.component';
-import {ToolComponent} from './component/tool/tool.component';
-import {AboutComponent} from './component/about/about.component';
+import {HomeComponent} from './home/home.component';
+import {LoginComponent} from './home/login/login.component';
+import {RegisterComponent} from './home/register/register.component';
 
 
 const routes: Routes = [
@@ -30,19 +26,19 @@ const routes: Routes = [
   },
   {
     path: 'blog',
-    component: BlogComponent
+    loadChildren: './blog/blog.module#BlogModule'
   },
   {
     path: 'github',
-    component: GithubComponent
+    loadChildren: './github/github.module#GithubModule'
   },
   {
     path: 'tool',
-    component: ToolComponent
+    loadChildren: './tool/tool.module#ToolModule'
   },
   {
     path: 'about',
-    component: AboutComponent
+    loadChildren: './about/about.module#AboutModule'
   },
   {
     path: '**',
