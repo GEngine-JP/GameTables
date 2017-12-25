@@ -15,10 +15,13 @@ export class GithubComponent implements OnInit {
   }
 
   ngOnInit() {
+    // 优先从缓存取
     const item: Item[] = JSON.parse(localStorage.getItem('githubItem'));
     if (item != null) {
       this.items = item;
     }
+
+    // 缓存没有直接拉数据
     this.itemService.getGithubInfo().subscribe(list => {
       this.items = list as Array<Item>;
       console.log(list);
