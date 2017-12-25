@@ -16,7 +16,7 @@ export class GithubComponent implements OnInit {
 
   ngOnInit() {
     // 优先从缓存取
-    const item: Item[] = JSON.parse(localStorage.getItem('githubItem'));
+    const item: Item[] = JSON.parse(sessionStorage.getItem('githubItem'));
     if (item != null) {
       this.items = item;
     }
@@ -25,7 +25,7 @@ export class GithubComponent implements OnInit {
     this.itemService.getGithubInfo().subscribe(list => {
       this.items = list as Array<Item>;
       console.log(list);
-      localStorage.setItem('githubItem', JSON.stringify(this.items));
+      sessionStorage.setItem('githubItem', JSON.stringify(this.items));
     });
   }
 
