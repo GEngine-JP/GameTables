@@ -9,6 +9,9 @@
     "github": "github",
     "about": "について",
     "tool": "ツール"
+  },
+  "xiaomo": {
+    "summary":"概要"
   }
 
 }
