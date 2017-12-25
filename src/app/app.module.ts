@@ -13,17 +13,12 @@ import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import {HeaderComponent} from './common/header/header.component';
 import {FooterComponent} from './common/footer/footer.component';
-import {Http, HttpModule, JsonpModule} from '@angular/http';
+import {Http, HttpModule} from '@angular/http';
 import {TranslateLoader, TranslateModule, TranslateStaticLoader} from 'ng2-translate';
 import {HomeModule} from './home/home.module';
 import {RouterModule} from '@angular/router';
 import {LoginComponent} from './home/login/login.component';
 import {RegisterComponent} from './home/register/register.component';
-import {GithubComponent} from './github/github.component';
-import {LinkComponent} from './link/link.component';
-import {ToolComponent} from './tool/tool.component';
-import {AboutComponent} from './about/about.component';
-import {BlogComponent} from './blog/blog.component';
 import {ItemService} from './github/item.service';
 
 export function createTranslateLoader(http: Http) {
@@ -35,11 +30,6 @@ export function createTranslateLoader(http: Http) {
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    BlogComponent,
-    GithubComponent,
-    LinkComponent,
-    AboutComponent,
-    ToolComponent,
     HeaderComponent,
     FooterComponent,
   ],
@@ -49,7 +39,6 @@ export function createTranslateLoader(http: Http) {
     FormsModule,
     HttpClientModule,
     HttpModule,
-    JsonpModule,
     HomeModule,
     BrowserAnimationsModule,
     RouterModule,

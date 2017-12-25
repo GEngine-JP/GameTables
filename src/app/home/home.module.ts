@@ -7,9 +7,13 @@ import {ConcatComponent} from './concat/concat.component';
 import {AbilityComponent} from './ability/ability.component';
 import {UserCenterComponent} from '../common/header/user-center/user-center.component';
 import {HomeComponent} from './home.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   imports: [
+    RouterModule.forChild([
+      {path: '', component: HomeComponent, pathMatch: 'full'}
+    ]),
     CommonModule,
   ],
   declarations: [
