@@ -15,9 +15,14 @@ export class GithubComponent implements OnInit {
   }
 
   ngOnInit() {
+    const item: Item[] = JSON.parse(localStorage.getItem('githubItem'));
+    if (item != null) {
+      this.items = item;
+    }
     this.itemService.getGithubInfo().subscribe(list => {
       this.items = list as Array<Item>;
       console.log(list);
+      localStorage.setItem('githubItem', JSON.stringify(this.items));
     });
   }
 

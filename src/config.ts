@@ -6,6 +6,6 @@ export const login = {
   logout: domain + '/logout'
 };
 
-export const github = 'https://api.github.com/search/repositories?q=javascript&sort=stars';
+export const github = 'https://api.github.com/search/repositories?q=language:java&sort=stars';
 
 

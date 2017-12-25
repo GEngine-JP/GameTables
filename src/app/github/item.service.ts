@@ -18,7 +18,7 @@ export class ItemService {
       return data.items.map(_data => {
         const item: Item = new Item();
         item.name = _data.name;
-        item.icon = _data.avatar_url;
+        item.icon = _data.owner.avatar_url;
         item.star = _data.stargazers_count;
         item.link = _data.url;
         item.summary = _data.description;
