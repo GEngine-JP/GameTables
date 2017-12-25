@@ -16,8 +16,8 @@ export class GithubComponent implements OnInit {
 
   ngOnInit() {
     this.itemService.getGithubInfo().subscribe(list => {
-      this.items = list;
-      console.log(this.items);
+      this.items = list as Array<Item>;
+      console.log(list);
     });
   }
 

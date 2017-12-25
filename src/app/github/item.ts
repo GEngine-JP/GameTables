@@ -1,7 +1,8 @@
 export class Item {
-  private name: string;
-  private summary: string;
-  private icon: string;
-  private star: number;
+  public name: string;
+  public summary: string;
+  public icon: string;
+  public star: number;
+  public link: string;
 
 }

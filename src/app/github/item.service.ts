@@ -1,19 +1,29 @@
 import {Injectable} from '@angular/core';
-import {Item} from './item';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
+import {github} from '../../config';
+import {Item} from './item';
 
 @Injectable()
 export class ItemService {
 
-  private githubApi = './mock-data/item.json';
+  private githubApi = github;
 
   constructor(public http: HttpClient) {
   }
 
 
-  public getGithubInfo(): Observable<Item[]> {
-    return this.http.get<Item[]>(this.githubApi);
+  public getGithubInfo(): Observable<any> {
+    return this.http.get(this.githubApi).map((data: any) => {
+      return data.items.map(_data => {
+        const item: Item = new Item();
+        item.name = _data.name;
+        item.icon = _data.avatar_url;
+        item.star = _data.stargazers_count;
+        item.link = _data.url;
+        item.summary = _data.description;
+        return item;
+      });
+    });
   }
-
 }
